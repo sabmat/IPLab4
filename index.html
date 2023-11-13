@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    
+<!-- Завдання 1 -->
+<button onclick="showCurrentDate()">Вивести поточну дату</button>
+<p id="currentDateOutput"></p>
+
+<!-- Завдання 2 -->
+<button onclick="getDayInfo()">День тижня</button>
+<p id="dayInfoOutput"></p>
+
+<!-- Завдання 3-->
+<input type="number" id="daysAgoInput" placeholder="Кількість днів назад">
+<button onclick="findDate()">Знайти дату</button>
+<p id="foundDateOutput"></p>
+
+<!-- Завдання 4-->
+<input type="number" id="yearInput" placeholder="Рік">
+<input type="number" id="monthInput" placeholder="Місяць (1-12)">
+<button onclick="getLastDayOfMonth()">Останній день місяця</button>
+<p id="lastDayOfMonthOutput"></p>
+
+<!-- Завдання 5-->
+<button onclick="getSecondsInfo()">Кількість секунд</button>
+<p id="secondsInfoOutput"></p>
+
+<!-- Завдання 6 -->
+<div>
+    <label for="inputDate">Введіть дату: </label>
+    <input type="date" id="inputDate">
+    <button onclick="formatDateToDDMMYYYY(document.getElementById('inputDate').value)">Вивести</button>
+</div>
+
+<div id="formattedDate"></div>
+<!-- Завдання 7 -->
+
+<label for="date1">Дата 1:</label>
+<input type="date" id="date1">
+
+<label for="date2">Дата 2:</label>
+<input type="date" id="date2">
+
+<button onclick="calculateDifference()">Різниця </button>
+
+<p id="result"></p>
+
+<!-- Завдання 8 -->
+<input type="text" id="formatDateInput" placeholder="Дата для форматування">
+<button onclick="formatDate()">Форматувати дату</button>
+<p id="formattedDateResultOutput"></p>
+
+<!-- Завдання 9-->
+<input type="text" id="userInputDate" placeholder="Введіть дату (ДД.ММ.РРРР або РРРР-ММ-ДД)">
+<button onclick="parseUserInputDate()">Обробити введену дату</button>
+<p id="parsedUserDateOutput"></p>
+<p id="parsedUserDateOutputUkrainian"></p>
+<p id="parsedUserDateOutputCustom"></p>
+<p id="parsedUserDateOutputEnglish"></p>
+
+
+<!-- Завдання 10 -->
+<div>
+    <label for="languageCode">Введіть код мови (наприклад, uk або en): </label>
+    <input type="text" id="languageCode">
+    <button onclick="formatDateTime(document.getElementById('languageCode').value)">Вивести</button>
+</div>
+<div id="formattedDate1"></div>
+
+</body>
+</html>
